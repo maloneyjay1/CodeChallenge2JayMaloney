@@ -18,10 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Ebay! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-qN-eSJ">
+                                <rect key="frame" x="20" y="127" width="560" height="77"/>
+                                <color key="backgroundColor" red="0.8865609217" green="0.8865609217" blue="0.8865609217" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ebayLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CwE-wB-8DX">
+                                <rect key="frame" x="251" y="212" width="99" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="2Ea-iQ-Q8k"/>
+                                    <constraint firstAttribute="width" constant="99" id="brr-WQ-9Zx"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41d-y1-roh">
-                                <rect key="frame" x="241" y="496" width="119" height="40"/>
+                                <rect key="frame" x="20" y="434" width="560" height="40"/>
                                 <color key="backgroundColor" red="0.19531941780000001" green="0.62179966249999996" blue="0.96708746469999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EFF-h1-n0q"/>
                                     <constraint firstAttribute="height" constant="40" id="fRH-iY-2ib"/>
                                     <constraint firstAttribute="width" constant="119" id="piB-0T-FV4"/>
                                 </constraints>
@@ -34,37 +49,28 @@
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fRH-iY-2ib"/>
+                                        <exclude reference="piB-0T-FV4"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="HhO-lv-qFZ" kind="show" id="18p-3C-Tdj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Ebay! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-qN-eSJ">
-                                <rect key="frame" x="20" y="127" width="560" height="77"/>
-                                <color key="backgroundColor" red="0.8865609217" green="0.8865609217" blue="0.8865609217" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ebayLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CwE-wB-8DX">
-                                <rect key="frame" x="180" y="253" width="240" height="202"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="202" id="6o9-fP-KaF"/>
-                                    <constraint firstAttribute="width" constant="240" id="hWx-Sf-wPM"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="41d-y1-roh" firstAttribute="top" secondItem="bbI-qN-eSJ" secondAttribute="bottom" constant="292" id="A8Q-Fn-XVX"/>
-                            <constraint firstItem="41d-y1-roh" firstAttribute="top" secondItem="CwE-wB-8DX" secondAttribute="bottom" constant="41" id="Kf7-ot-ifM"/>
-                            <constraint firstItem="CwE-wB-8DX" firstAttribute="top" secondItem="bbI-qN-eSJ" secondAttribute="bottom" constant="49" id="PIh-7B-hUk"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="41d-y1-roh" secondAttribute="bottom" constant="64" id="bCb-Aj-haX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bbI-qN-eSJ" secondAttribute="trailing" id="cgq-AM-XhQ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="bbI-qN-eSJ" secondAttribute="leading" id="e9W-46-drF"/>
-                            <constraint firstItem="41d-y1-roh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egd-7w-DJP"/>
-                            <constraint firstItem="bbI-qN-eSJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="p3n-jb-WZO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bbI-qN-eSJ" secondAttribute="bottom" constant="396" id="wB2-dd-Hpq"/>
-                            <constraint firstItem="CwE-wB-8DX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yKW-7M-4dj"/>
+                            <constraint firstItem="CwE-wB-8DX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="212" id="1AD-J7-2hj"/>
+                            <constraint firstItem="bbI-qN-eSJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2Wi-SR-qTt"/>
+                            <constraint firstItem="bbI-qN-eSJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="46v-M9-UDh"/>
+                            <constraint firstItem="CwE-wB-8DX" firstAttribute="top" secondItem="bbI-qN-eSJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5H5-Yj-ltk"/>
+                            <constraint firstItem="bbI-qN-eSJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="UPx-yB-3qm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="41d-y1-roh" secondAttribute="bottom" constant="126" id="hZL-39-J7d"/>
+                            <constraint firstItem="bbI-qN-eSJ" firstAttribute="leading" secondItem="41d-y1-roh" secondAttribute="leading" id="oqG-ig-U2j"/>
+                            <constraint firstItem="bbI-qN-eSJ" firstAttribute="trailing" secondItem="41d-y1-roh" secondAttribute="trailing" id="urx-Pw-mya"/>
+                            <constraint firstItem="bbI-qN-eSJ" firstAttribute="centerX" secondItem="CwE-wB-8DX" secondAttribute="centerX" id="yPW-Vx-246"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Oyq-K0-xBg"/>
@@ -86,7 +92,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookCell" textLabel="BP5-u2-0f4" rowHeight="77" style="IBUITableViewCellStyleDefault" id="7wM-qP-ADZ">
-                                <rect key="frame" x="0.0" y="28" width="600" height="77"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7wM-qP-ADZ" id="BAX-ah-7hs">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="76"/>
@@ -143,8 +149,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-Uq-hbj" userLabel="image">
+                                <rect key="frame" x="215" y="218" width="170" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="tap-ZV-gsr"/>
+                                    <constraint firstAttribute="width" constant="170" id="xPt-41-fFr"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odJ-xU-wsd">
-                                <rect key="frame" x="268" y="543" width="65" height="37"/>
+                                <rect key="frame" x="268" y="426" width="65" height="37"/>
                                 <color key="backgroundColor" red="0.14117647059999999" green="0.50196078430000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="HXQ-KG-gi4"/>
@@ -163,13 +176,6 @@
                                     <segue destination="HhO-lv-qFZ" kind="show" id="ZAT-5m-ZDj"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-Uq-hbj" userLabel="image">
-                                <rect key="frame" x="215" y="304" width="170" height="164"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="164" id="tap-ZV-gsr"/>
-                                    <constraint firstAttribute="width" constant="170" id="xPt-41-fFr"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -177,13 +183,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="59H-Xv-Cve" secondAttribute="trailing" id="GUj-te-b7z"/>
                             <constraint firstItem="9Qx-78-w6p" firstAttribute="leading" secondItem="59H-Xv-Cve" secondAttribute="leading" id="HUZ-na-1og"/>
                             <constraint firstItem="9Qx-78-w6p" firstAttribute="top" secondItem="59H-Xv-Cve" secondAttribute="bottom" constant="24" id="ayL-Rm-Rib"/>
-                            <constraint firstItem="odJ-xU-wsd" firstAttribute="top" secondItem="DQu-Uq-hbj" secondAttribute="bottom" constant="75" id="dsy-jd-oju"/>
+                            <constraint firstItem="odJ-xU-wsd" firstAttribute="top" secondItem="DQu-Uq-hbj" secondAttribute="bottom" constant="44" id="dsy-jd-oju"/>
                             <constraint firstItem="odJ-xU-wsd" firstAttribute="centerX" secondItem="HoE-w1-xJL" secondAttribute="centerX" id="eTH-Bn-Y6Q"/>
                             <constraint firstItem="DQu-Uq-hbj" firstAttribute="centerX" secondItem="HoE-w1-xJL" secondAttribute="centerX" id="gAv-6A-aUZ"/>
                             <constraint firstItem="9Qx-78-w6p" firstAttribute="trailing" secondItem="59H-Xv-Cve" secondAttribute="trailing" id="iha-Bo-73J"/>
-                            <constraint firstItem="DQu-Uq-hbj" firstAttribute="top" secondItem="9Qx-78-w6p" secondAttribute="bottom" constant="116" id="og4-Kd-P9M"/>
-                            <constraint firstItem="hd0-8g-RdO" firstAttribute="top" secondItem="DQu-Uq-hbj" secondAttribute="bottom" constant="132" id="sY5-na-fT1"/>
-                            <constraint firstItem="hd0-8g-RdO" firstAttribute="top" secondItem="odJ-xU-wsd" secondAttribute="bottom" constant="20" id="wdu-99-Mon"/>
+                            <constraint firstItem="DQu-Uq-hbj" firstAttribute="top" secondItem="9Qx-78-w6p" secondAttribute="bottom" constant="30" id="og4-Kd-P9M"/>
+                            <constraint firstItem="hd0-8g-RdO" firstAttribute="top" secondItem="DQu-Uq-hbj" secondAttribute="bottom" constant="218" id="sY5-na-fT1"/>
+                            <constraint firstItem="hd0-8g-RdO" firstAttribute="top" secondItem="odJ-xU-wsd" secondAttribute="bottom" constant="137" id="wdu-99-Mon"/>
                             <constraint firstAttribute="leadingMargin" secondItem="59H-Xv-Cve" secondAttribute="leading" id="z7r-2a-32p"/>
                         </constraints>
                     </view>
@@ -220,6 +226,6 @@
         <image name="ebayLogo" width="832" height="476"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZAT-5m-ZDj"/>
+        <segue reference="18p-3C-Tdj"/>
     </inferredMetricsTieBreakers>
 </document>
