@@ -10,11 +10,16 @@ import UIKit
 
 class IntroViewController: UIViewController {
     
-    var books:[Book] = []
+    @IBOutlet weak var ebayLogo: UIImageView!
+    
+    
+    static var books:[Book] = []
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.ebayLogo.image = UIImage(contentsOfFile: "ebayLogo")
         
         //Activity indicator to show that data is loading.  While retrieval is active, the user can't progress in UI, ensuring that the app will work as intended visually.
         self.activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 100, 100))
@@ -38,6 +43,7 @@ class IntroViewController: UIViewController {
         if let books = bookArray {
             if books.count == 2000 {
                 
+                BookController.mainBookArray = books
                 //if data is complete, allow user to proceed
                 self.activityIndicator.stopAnimating()
                 UIApplication.sharedApplication().endIgnoringInteractionEvents()
