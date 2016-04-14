@@ -54,6 +54,10 @@
 		E65D116A1CBFC86C00AA1649 /* CodeChallenge2JayMaloney */ = {
 			isa = PBXGroup;
 			children = (
+				E65D11841CBFCAC100AA1649 /* Controller */,
+				E65D11831CBFCABC00AA1649 /* View */,
+				E65D11821CBFCAB700AA1649 /* Model */,
+				E65D11811CBFCAB200AA1649 /* Network */,
 				E65D116B1CBFC86C00AA1649 /* AppDelegate.swift */,
 				E65D116D1CBFC86C00AA1649 /* ViewController.swift */,
 				E65D116F1CBFC86C00AA1649 /* Main.storyboard */,
@@ -62,6 +66,34 @@
 				E65D11771CBFC86C00AA1649 /* Info.plist */,
 			);
 			path = CodeChallenge2JayMaloney;
+			sourceTree = "<group>";
+		};
+		E65D11811CBFCAB200AA1649 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		E65D11821CBFCAB700AA1649 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E65D11831CBFCABC00AA1649 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E65D11841CBFCAC100AA1649 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +319,7 @@
 				E65D117C1CBFC86C00AA1649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
